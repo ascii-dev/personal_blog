@@ -1,0 +1,64 @@
+body {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.blog-page {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+article {
+    grid-area: article;
+}
+
+.about {
+    padding: 2rem;
+    background-color: rgb(240, 237, 237);
+    margin-bottom: 3rem;
+}
+
+.archives .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+}
+
+.elsewhere .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+}
+
+.archives .title {
+    margin-bottom: .5rem;
+}
+
+.elsewhere .title {
+    margin-bottom: .5rem;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: rgb(240, 237, 237);
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
